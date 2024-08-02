@@ -6,11 +6,17 @@
 # if 'd' argument is given then 's' and 'e' are ignored
 # 'r' and 'w' arguments are not validated
 
+# to mount Windows mapped Box drive:
+# sudo mkdir /mnt/box
+# sudo mount -t drvfs 'C:Users\<USER>\Box' /mnt/box
+
 # examples:
 # python get_file_info.py -r '/mnt/box/AMT Recordings' -d 7
 # python get_file_info.py -r '/mnt/box/AMT Recordings' -s 2024-06-06
 # python get_file_info.py -r '/mnt/box/AMT Recordings' -e 2024-06-06
 # python get_file_info.py -r '/mnt/box/AMT Recordings' -s 2024-01-01 -e 2024-01-31
+
+
 
 import pandas as pd
 import argparse
